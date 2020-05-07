@@ -1,0 +1,208 @@
+body {
+  padding-top: 56px;
+}
+
+footer{
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	scroll-behavior: smooth;
+	scroll-Y:;
+}
+
+.card-1,.card-2{
+	border-radius: 10px;
+}
+.white-Shadow{
+	font-size: 25px;
+}
+.linkHover:hover{
+	color: black !important;
+	font-weight: bold;
+}
+.slider{
+	background-image: 100% 300px !important;
+	width: 100% !important;
+	height: 350px !important;
+	border-radius: 10px !important;
+}
+
+/**/
+.productImg{
+	background-size: 100% 180px !important;
+	/*width: 100% !important;*/
+	height: 180px !important;
+}
+.svg-icon {
+  width: 1em;
+  height: 1em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #4691f6;
+}
+
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
+
+/*cart */
+.notification {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+  margin-right: 10px;
+}
+
+.notification .badge {
+  position: absolute;
+  top: -3px !important;
+  right: 30px !important;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background: #555;
+  color: white;
+}
+/*star*/
+.checked {
+  color: orange;
+}
+
+a {
+	color: #0254EB
+}
+a:visited {
+	color: #0254EB
+}
+a.morelink {
+	text-decoration:none;
+	outline: none;
+}
+.morecontent span {
+	display: none;
+}
+.comment {
+	width: 400px;
+	background-color: #f0f0f0;
+	margin: 10px;
+}
+
+.search{
+	width: 400px !important;
+	border-radius: 15px;
+}
+.search:focus{
+	border-color: unset !important;
+	border:2px solid green;
+	outline-style: unset !important;
+	color: white;
+	padding-left: 30px;
+	text-align: left;
+}
+
+.search.form-control::-webkit-input-placeholder {
+  color: #bbb;
+}
+
+
+/* css for contact */
+
+#contact_name,#contact_email,#comments{
+	border-radius: 25px !important;
+}
+#contact_name:focus{
+	border:1px solid #aaa;
+}
+.headtext{
+	font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.boxShadow:hover{
+	box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+	border-radius: 25px
+}
+
+/*media query*/
+@media only screen and (max-width: 600px) {
+  footer{
+  	position: relative;
+  	height: 70px !important;
+  	text-align: center;
+  }
+  .setfont{
+  	font-size: 20px;
+  }
+  .setwidth{
+  	line-height: 3px;
+  	position: relative;
+  	right: 30px;
+  	text-align: center;
+  	font-size: 17px !important;
+  }
+  .addtocart{
+  	position: relative;
+  	left: 52px;
+  }
+  .textfood{
+  	display: none;
+  }
+  .list{
+  	display: none !important;
+  }
+  .slider{
+  	position: relative;
+  	width: 100%;
+  	height: 200px !important;
+  }
+  .page{
+  	text-align: center !important;
+  }
+  .pageCenter{
+  	position: relative;
+    text-align: center !important;
+    left: 30px !important;
+  }
+  .form-inline{
+  	position: relative;
+  	left: 0px !important;
+  	margin-bottom: 10px;
+  }
+  #search_text{
+  	position: relative;
+  	width: 200px !important;
+  }
+  .notification .badge {
+    position: absolute;
+    top: 5px !important;
+    right: 188px !important;
+    padding: 5px 10px;
+    border-radius: 50%;
+    background: #555;
+    color: white;
+	}
+	.buttonLogin{
+		position: relative;
+		width: 100px;
+		left: 30px;
+		bottom: 10px;
+		margin-top: 10px;
+	}
+	.buttonRegister{
+		position: relative;
+		width: 100px;
+		left: 15px;
+	}
+}
