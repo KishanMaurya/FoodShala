@@ -25,13 +25,13 @@
                 <form action="" method="post" enctype="multipart/form-data">
                   <div class="row">
                     <div class="col-sm-6">
-                      <label for="p_name" class="font-weight-bold">Product-Name(Title OF Food) :</label>
+                      <label for="p_name" class="font-weight-bold grand">Product-Name(Title OF Food) :</label>
                       <div class="form-group">
                         <input type="text" id="p_name" name="product_name" class="form-control" placeholder="Enter Product name..." required>
                       </div>
                     </div>
                     <div class="col-sm-6">
-                      <label for="product_category" class="font-weight-bold">Product-Category :</label>
+                      <label for="product_category" class="font-weight-bold grand">Product-Category :</label>
                       <div class="form-group">
                         <select name="product_category" class="form-control text-dark" required>
                           <option value="">Select product category</option>
@@ -44,13 +44,13 @@
 
                   <div class="row">
                     <div class="col-sm-6">
-                      <label for="file" class="font-weight-bold">Product-Image</label>
+                      <label for="file" class="font-weight-bold grand">Product-Image</label>
                       <div class="form-group">
                         <input type="file" id="file" name="file" class="form-control" placeholder="Choose Product Image..." required>
                       </div>
                     </div>
                     <div class="col-sm-6">
-                      <label for="price" class="font-weight-bold">Product-Price</label>
+                      <label for="price" class="font-weight-bold grand">Product-Price</label>
                       <div class="form-group">
                         <input type="text" id="price" name="price" class="form-control text-dark" placeholder="Enter product price Rs..." required>
                       </div>
@@ -59,14 +59,14 @@
 
                   <div class="row">
                     <div class="col-sm-6" >
-                      <label for="size" class="font-weight-bold">Title fo food (Size,Thalis,Jambo,Mini,fries,Pasta,Maggi Berger,Pizza)</label>
+                      <label for="size" class="font-weight-bold grand">Title fo food (Size,Thalis,Jambo,Mini,fries,Pasta,Maggi Berger,Pizza)</label>
                       <div class="form-group">
                          <input type="text" name="size" class="form-control" placeholder="Enter the food of the name ,Size,Thalis,Jambo,Mini,fries,Pasta,Maggi Berger,Pizza" required>
                       </div>
                     </div>
                     
                     <div class="col-sm-6" >
-                      <label for="desc" class="font-weight-bold">Product-Description:</label>
+                      <label for="desc" class="font-weight-bold grand">Product-Description:</label>
                       <div class="form-group">
                         <textarea id="desc" name="desc" class="form-control" placeholder="Enter product description..." required id="" cols="30" rows="3"></textarea>
                       </div>
@@ -78,7 +78,7 @@
                     </div>
                     <div class="col-sm-6">
                       <div class="form-group text-right" style="position: relative;top: 10px;">
-                        <button type="submit" name="add_product" class="btn btn-primary px-5 font-weight-bold btn-dark">
+                        <button type="submit" name="add_product" class="btn btn-primary px-5 font-weight-bold btn-dark BtnSet">
                         Add Product</button>
                       </div>
                     </div>

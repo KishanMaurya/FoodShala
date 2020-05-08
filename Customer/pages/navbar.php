@@ -52,7 +52,7 @@ if (!isset($_SESSION['resturant']))
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="../index.php" class="font-weight-bold text-uppercase text-info">
-        <img src="img/p2.png" alt="" width="50" height="50">
+        <img src="img/p2.png" alt="" width="50" height="50" class="imgSetIcon">
       <span class="text-info font-weight-bold white-Shadow">FoodShala</span></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -81,20 +81,20 @@ if (!isset($_SESSION['resturant']))
             else{
               ?>
                 <li class="nav-item dropdown bg-dark font-normal">
-                  <a class="nav-link dropdown-toggle text-white font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle text-white font-weight-bold bg-info" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i class="fas fa-user-tie mx-2" style="font-size: 25px;"></i> 
                     <?php echo $_SESSION['resturant'];?>
                   </a>
                   <div class="dropdown-menu bg-info" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item text-white linkHover" href="#">
+                      <a class="dropdown-item text-white linkHover bg-info" href="#">
                         <i class="fas fa-user px-1"></i> <?php echo $_SESSION['login_type'];?>
                       </a>  
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item text-white linkHover" href="customer.php"><i class="fas fa-address-card px-1"></i> Profile</a>
-                      <a class="dropdown-item text-white linkHover" href="../cart.php">
+                      <a class="dropdown-item text-white linkHover bg-info" href="customer.php"><i class="fas fa-address-card px-1"></i> Profile</a>
+                      <a class="dropdown-item text-white linkHover bg-info" href="../cart.php">
                         <i class="far fa-chart-bar px-1"></i> View Order</a>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item text-white linkHover" href="../logout.php">Logout  <i class="fas fa-sign-out-alt"></i></a>
+                      <a class="dropdown-item text-white linkHover bg-info" href="../logout.php"> <i class="fas fa-sign-out-alt"></i> Logout  </a>
                   </div>
                 </li>
               <?php

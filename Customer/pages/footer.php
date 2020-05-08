@@ -1,17 +1,18 @@
 <footer class="bg-dark">
-  <div class="container-fluid">
-    <div class="row  py-2">
-      <div class="col-md-3">
-        <h2 class="font-mono px-5 text-white text-info">FoodShala</h2>
-      </div>
-      <div class="col-md-9">
-        <p class="text-right text-white pt-2 px-5">Copyright &copy; Your Website 2019</p>
+    <div class="container-fluid">
+      <div class="row  py-2">
+        <div class="col-md-3">
+          <h2 class="font-mono px-5 text-white text-info setfont">FoodShala</h2>
+        </div>
+        <div class="col-md-9">
+          <p class="text-right text-white pt-2 px-5 setwidth">Copyright &copy; 2020</p>
+        </div>
       </div>
     </div>
-  </div>
 </footer>
 
 <script>
+  
   $('.datepicker').datepicker({
     format: 'mm/dd/yyyy',
     startDate: '-3d',

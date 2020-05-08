@@ -13,14 +13,14 @@
             <div class="container-fluid">
               <div class="row justify-content-center">
                 <!-- Recent Updates-->
-                <div class="col-lg-10">
+                <div class="col-lg-10 justify-content-center">
                   <div class="recent-updates card">
                     <div class="card-header bg-dark text-white">
-                      <div class="row">
-                        <div class="col-md-6">
+                      <div class="row RightSide">
+                        <div class="col-md-6 UserProfile">
                           <h3 class="h5">Profile</h3>
                         </div>
-                        <div class="col-md-6 text-right">
+                        <div class="col-md-6 text-right UserID">
                           <h3 class="h5">User-ID: <?php echo $_SESSION['customer_id']; ?></h3>
                         </div>
                       </div>
@@ -101,7 +101,7 @@
                         </div>
                         <div class="col-md-6">
                           <div class="form-group text-right mx-4" style="margin-top: 35px;">
-                            <button type="submit" class="btn btn-success px-5 py-1 font-weight-bold">Save Profile</button>
+                            <button type="submit" class="btn btn-success px-5 py-1 font-weight-bold SaveBtn">Save Profile</button>
                           </div>
                         </div>
                       </div>

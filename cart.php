@@ -133,7 +133,7 @@ $query=mysqli_query($con,"SELECT product.p_name,product.p_category,product.p_pri
       <div class="col-lg-10">
       	<div class="middle" style="  padding:60px;  width:100%;">
        <!--tab heading-->
-	   <ul class="nav nav-tabs nabbar_inverse bg-info" id="myTab" style="border-radius:10px 10px 10px 10px;" role="tablist">
+	   <ul class="nav nav-tabs nabbar_inverse bg-info InlineSet" id="myTab" style="border-radius:10px 10px 10px 10px;" role="tablist">
           <li class="nav-item">
              <a class="nav-link active" style="color:#BDDEFD;" id="viewitem-tab" data-toggle="tab" href="#viewitem" role="tab" aria-controls="viewitem" aria-selected="true">View Cart</a>
           </li>
@@ -149,7 +149,7 @@ $query=mysqli_query($con,"SELECT product.p_name,product.p_category,product.p_pri
 	<!--tab 1 starts-->   
 	<div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="viewitem" role="tabpanel" aria-labelledby="home-tab">
-            <table class="table table-bordered text-center">
+            <table class="table table-bordered text-center TableResponsive">
                 <tbody>
 	        	    <?php
 	                	$query=mysqli_query($con,"SELECT product.p_name,product.p_category,product.p_price,product.p_description,product.p_title,product.p_image,cart.cart_id,cart.product_id,cart.register_id FROM product INNER JOIN cart ON product.p_id=cart.product_id WHERE cart.register_id=$cust_id");
@@ -163,15 +163,16 @@ $query=mysqli_query($con,"SELECT product.p_name,product.p_category,product.p_pri
 	                		?>
                       <tr class="font-weight-bold">
                          <td>
-                         	<img class="rounded img-thumbnail" src="Resturant/img/<?php echo $res['p_image'];?>" height="100px" width="100px">
+                         	<img class="rounded img-thumbnail" 
+                         	src="Resturant/img/<?php echo $res['p_image'];?>" height="100px" width="100px">
                          </td>
-                         <td><?php echo $res['p_name'];?></td>
-                         <td><i class="fas fa-rupee-sign">
+                         <td class="grand"><?php echo $res['p_name'];?></td>
+                         <td class="grand"><i class="fas fa-rupee-sign">
                          	<?php echo $res['p_price'];?></td>
-                         <td><?php echo $res['p_title'];?></td>
+                         <td class="grand"><?php echo $res['p_title'];?></td>
 		                <form method="POST" enctype="multipart/form-data">
                            <td>
-                           <button type="submit" name="del"  value="<?php echo $res['cart_id']?>" class="btn btn-danger btn-sm px-3 font-weight-bold">Delete</button>
+                           <button type="submit" name="del"  value="<?php echo $res['cart_id']?>" class="btn btn-danger btn-sm px-3 grand">Delete</button>
                        	</td>
                         </form>
                         <?php 
@@ -184,17 +185,17 @@ $query=mysqli_query($con,"SELECT product.p_name,product.p_category,product.p_pri
 					?>
 					<tr>
 						<td colspan="2">
-					  		<h5 style="color:red;">Grand Total</h5>
+					  		<h5 style="color:red;" class="grand">Grand Total</h5>
 					  	</td>
 					  	<td>
-					  		<h5>
-					  			<i class="fas fa-rupee-sign"></i>&nbsp;
+					  		<h5 class="grand"><i class="fas fa-rupee-sign"></i>&nbsp;
 					  			<?php echo end($gtotal); ?>
 					  		</h5>
 					  	</td>
 					  	<td colspan="3" style="padding:30px; text-align:center;">
 					  		<a href="order.php?cust_id=<?php echo $cust_id; ?>">
-					  			<button type="button" style=" color:white; font-weight:bold; text-transform:uppercase;" class="btn btn-primary">
+					  			<button type="button" style=" color:white; font-weight:bold; text-transform:uppercase;" class="btn btn-primary 
+					  			Process-to-check">
 					  			Proceed to checkout
 					  			</button>
 					  		</a>
@@ -228,20 +229,21 @@ $query=mysqli_query($con,"SELECT product.p_name,product.p_category,product.p_pri
 			<form method="post" enctype="multipart/form-data">
                 <div class="form-group">
                       <label for="name">Name</label>
-                      <input type="text" id="name" value="<?php if(isset($fld_name)){ echo $fld_name;}?>" class="form-control" name="name" required="required"/>
+                      <input type="text" id="name" value="<?php if(isset($name)){ echo $name;}?>" class="form-control" name="name" required="required"/>
                 </div>	
 				<div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" value="<?php if(isset($fld_email)){ echo $fld_email;}?>" class="form-control"  readonly/>
+                    <input type="email" id="email" name="email" value="<?php if(isset($email)){ echo $email;}?>" class="form-control"  readonly/>
                 </div>
 				<div class="form-group">
                       <label for="mobile">Mobile</label>
-                      <input type="tel" id="mobile" class="form-control" name="mobile" pattern="[6-9]{1}[0-9]{2}[0-9]{3}[0-9]{4}" value="<?php if(isset($fld_mobile)){ echo $fld_mobile;}?>" placeholder="" required>
+                      <input type="text" id="mobile" class="form-control" name="mobile" 
+                      pattern="[6-9]{1}[0-9]{2}[0-9]{3}[0-9]{4}" value="<?php if(isset($phone)){ echo $phone;}?>" placeholder="" required>
                 </div>
 					
                 <div class="form-group">
                       <label for="pwd">Password:</label>
-                     <input type="password" name="pswd" value="<?php if(isset($fld_password)) { echo $fld_password; }?>"class="form-control"  id="pwd" required/>
+                     <input type="password" name="pswd" value="<?php if(isset($password)) { echo $password; }?>"class="form-control"  id="pwd" required/>
                 </div>
                 <button type="submit" name="update" style="background:#ED2553; border:1px solid #ED2553;" class="btn btn-primary">Update</button>
                 <div class="footer" style="color:red;">
@@ -253,7 +255,7 @@ $query=mysqli_query($con,"SELECT product.p_name,product.p_category,product.p_pri
 		<!--tab 2 ends-->
 		<!--tab 3 starts-->
         <div class="tab-pane fade" id="orders" role="tabpanel" aria-labelledby="orders-tab">
-			<table class="table table-bordered">
+			<table class="table table-bordered TableResponsive">
 			<th>Order Number</th>
 			<th>Item Name</th>
 			<th>Price</th>

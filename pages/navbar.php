@@ -38,7 +38,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="FoodShala is a food  service portal.">
-  <meta name="author" content="Kishan Maurya">
+  <meta name="author" content="Kishan Maurya (Fullstack Developer)">
   <meta name="keywords" content="FoodShala,Food, Restorent,Food Service,">
   <title>FoodShala Homepage</title>
   <link rel="stylesheet" href="include/css/main.css">
@@ -79,11 +79,12 @@ if (isset($addtocart)) {
     }
 }
 ?>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top smallDevice">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.php" class="font-weight-bold text-uppercase text-info">
-        <img src="img/p2.png" alt="" width="50" height="50">
-      <span class="text-info font-weight-bold white-Shadow">FoodShala</span></a>
+    <a class="navbar-brand" href="index.php" class="font-weight-bold text-uppercase text-info">
+        <img src="img/p2.png" alt="logo" width="50" height="50" class="imgSetIcon">
+      <span class="text-info font-weight-bold white-Shadow">FoodShala</span>
+    </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>

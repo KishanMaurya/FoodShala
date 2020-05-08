@@ -1,6 +1,6 @@
 <div class="page-content d-flex align-items-stretch">
   <!-- Side Navbar -->
-  <nav class="side-navbar">
+  <nav class="side-navbar LeftSideBar">
     <!-- Sidebar Header-->
     <div class="sidebar-header d-flex align-items-center">
       <div class="avatar">

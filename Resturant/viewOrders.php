@@ -22,7 +22,7 @@
                       <div class="item d-flex justify-content-between">
                         <div class="info d-flex">
                             <table id="example" 
-                              class="table table-hover display" style="width:100%">
+                              class="table table-hover display TableResponsive table-responsive-sm table-responsive-lg table-striped" style="width:100%">
                               <thead>
                                 <tr>
                                   <th >#</th>

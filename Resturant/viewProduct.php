@@ -21,7 +21,7 @@
                       <!-- Item-->
                       <div class="item d-flex justify-content-between">
                         <div class="info d-flex">
-                            <table id="example" class="table table-bordered table-responsive" width="100%">
+                            <table id="example" class="table table-bordered table-responsive TableResponsive" width="100%">
                               <thead>
                                 <tr>
                                   <th>#</th>

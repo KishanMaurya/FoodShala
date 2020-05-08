@@ -1,5 +1,5 @@
 body {
-  padding-top: 56px;
+  /*padding-top: 56px;*/
 }
 
 footer{
@@ -26,6 +26,12 @@ footer{
 	width: 100% !important;
 	height: 350px !important;
 	border-radius: 10px !important;
+	margin-top: 60px;
+}
+.InlineSet{
+	top: 29px;
+    border-radius: 10px 10px 10px 10px;
+    position: relative;
 }
 
 /**/
@@ -134,9 +140,23 @@ a.morelink {
 	box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
 	border-radius: 25px
 }
-
+.logoIcon{
+	display: none;
+}
 /*media query*/
 @media only screen and (max-width: 600px) {
+	.delete-sm{
+		font-weight: 900 !important;
+		font-size: initial !important;
+	}
+	.grand{
+		font-weight: initial !important;
+		font-size: 12px !important;
+	}
+	.Process-to-check{
+		font-weight: initial !important;
+		font-size: 12px !important;
+	}
   footer{
   	position: relative;
   	height: 70px !important;
@@ -205,4 +225,25 @@ a.morelink {
 		width: 100px;
 		left: 15px;
 	}
+	/*logo*/
+	.imgSetIcon{
+		width: 35px;
+		height: 35px;
+	}
+	.white-Shadow{
+		font-size: 18px;
+	}
+	.InlineSet{
+		display: inline-flex;
+		width: 100%;
+	}
+	.TableResponsive{
+		display: block;
+	    width: 100%;
+	    overflow-x: auto;
+	    -webkit-overflow-scrolling: touch;
+	    padding:0px !important;
+	    font-weight: normal !important;
+	}
 }
+

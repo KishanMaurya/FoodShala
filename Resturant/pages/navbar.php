@@ -86,16 +86,20 @@ if (!isset($_SESSION['resturant']))
                     <?php echo $_SESSION['resturant'];?>
                   </a>
                   <div class="dropdown-menu bg-info" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item text-white linkHover" href="#">
+                      <a class="dropdown-item text-white linkHover bg-info" href="#">
                         <i class="fas fa-utensils px-1"></i> <?php echo $_SESSION['login_type'];?>
                       </a>  
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item text-white linkHover" href="#">
+                      <a class="dropdown-item text-white linkHover bg-info" href="resturant.php">
                         <i class="fas fa-address-card px-1"></i> Profile</a>
-                      <a class="dropdown-item text-white linkHover" href="#">
+                      <a class="dropdown-item text-white linkHover bg-info" href="viewOrders.php">
                         <i class="far fa-chart-bar px-1"></i> View Order</a>
+                        <a class="dropdown-item text-white linkHover bg-info" href="addProduct.php">
+                        <i class="fas fa-address-card px-1"></i> Add Product</a>
+                      <a class="dropdown-item text-white linkHover bg-info" href="viewProduct">
+                        <i class="far fa-chart-bar px-1"></i> View Product</a>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item text-white linkHover" href="../logout.php">Logout  <i class="fas fa-sign-out-alt"></i></a>
+                      <a class="dropdown-item text-white linkHover bg-info" href="../logout.php"><i class="fas fa-sign-out-alt"></i>Logout  </a>
                   </div>
                 </li>
               <?php

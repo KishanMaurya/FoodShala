@@ -34,21 +34,45 @@
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
               <img class="d-block img-fluid slider" src="img/p8.jpg"  alt="First slide">
+              <div class="carousel-caption">
+                <h3 class="h3-responsive">Egg Roll</h3>
+                <p><span class="badge-pill badge-primary opacity-25">Veg And non veg Roll</span></p>
+              </div>
             </div>
             <div class="carousel-item">
-              <img class="d-block img-fluid slider" src="img/p7.jpg"  alt="Second slide">
+              <img class="d-block img-fluid slider" src="img/litti.jpg"  alt="Second slide">
+              <div class="carousel-caption">
+                <h3 class="h3-responsive">Rosted Bihari </h3>
+                <p><span class="badge-pill badge-primary">Litti Chokha</span></p>
+              </div>
             </div>
             <div class="carousel-item">
               <img class="d-block img-fluid slider" src="img/p3.jpg"  alt="Third slide">
+              <div class="carousel-caption">
+                <h3 class="h3-responsive">Pure veg food</h3>
+                <p><span class="badge-pill badge-primary">Non Roti,Paneer</span></p>
+              </div>
             </div>
             <div class="carousel-item">
               <img class="d-block img-fluid slider" src="img/p10.jpg"  alt="Fouth slide">
+              <div class="carousel-caption">
+              <h3 class="h3-responsive">Pure veg food</h3>
+                <p><span class="badge-pill badge-primary">Non Roti,Paneer</span></p>
+            </div>
             </div>
             <div class="carousel-item">
               <img class="d-block img-fluid slider" src="img/p9.jpg"  alt="Fifth slide">
+              <div class="carousel-caption">
+              <h3 class="h3-responsive">Pure veg food</h3>
+                <p><span class="badge-pill badge-primary">Non Roti,Paneer</span></p>
+            </div>
             </div>
             <div class="carousel-item">
               <img class="d-block img-fluid slider" src="img/p3.jpg"  alt="Sixth slide">
+              <div class="carousel-caption">
+              <h3 class="h3-responsive">Pure veg food</h3>
+                <p><span class="badge-pill badge-primary">Non Roti,Paneer</span></p>
+            </div>
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
